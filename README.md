@@ -41,7 +41,7 @@ var dOutput = createReferenceVariable({prefix:"D", force:true}, xyzFormat); // W
 In the function "onCircular" on line 678 we add the following lines to calculate the angle using default javascript Math functions:
 
 ```javascript
-var middle = {"x": (x-start.x)/2, "y": (y-start.y)/2}; //stores the distance between the middle between the start and and point
+var middle = {"x": (x-start.x)/2, "y": (y-start.y)/2}; //stores the distance between the end point and the middle between start and end
 var lengthOpposite = Math.sqrt(Math.pow(middle.x,2)+Math.pow(middle.y,2)); //Calculate the distance between middle and end point using Pythagoras
 var lengthAdjacent = Math.sqrt(Math.pow(cx-(start.x+middle.x),2)+Math.pow(cy-(start.y+middle.y),2)); //calculate the distance between middle and center using Pythagoras
 var angleRadians = Math.atan(lengthOpposite/lengthAdjacent) * 2; //calculate angle in radians using tangens
