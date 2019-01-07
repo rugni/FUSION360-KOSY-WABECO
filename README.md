@@ -8,7 +8,7 @@ This is a modified version of the KOSY postprocessor for Autodesk Fusion 360 (ht
 * This postprocessor writes out a G77 command at the end to return to a home position. You might want to remove it, I'm not sure if it is supported by nccad75 and Wabeco.
 
 ## Why modify?
-This Postprocessor uses a different format for G2 and G3 (Circlular, clockwise and counter-clockwise) movements then the kosy postprocessor by Autodesk. 
+This Postprocessor uses a different format for G2 and G3 (Circlular, clockwise and counter-clockwise) movements than the kosy postprocessor by Autodesk. 
 
 The Wabeco version of nccad supports two formats for circular movements. The first one is the more common version, that is also used in the original kosy postprocessor:
 
